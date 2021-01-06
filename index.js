@@ -41,7 +41,7 @@ app.use(bodyParser.json());
             res.write(realTimeData);
             
            // res.write(realTimeData);
-             console.log(realTimeData);
+           //  console.log(realTimeData);
 
             })
         .on("end",(err)=>{
@@ -54,9 +54,11 @@ app.use(bodyParser.json());
     
   });
 
+  let port = process.env.PORT || 4000;
 
-  app.listen(4000);
-  console.log("Running at Port 3000");
+  app.listen(port,()=>{
+    console.log(`weather app listening on port http://localhost:${port}`);
+  });
 
 
 
