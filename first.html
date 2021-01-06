@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <title>Weather App</title>
+
+    <style>
+
+body{
+background: white;
+ 
+ 
+
+}
+
+.mainbox{
+    margin: auto;
+ 
+
+ }
+ .searchbox{
+     margin: auto;
+     position: relative;
+     
+ }
+    </style>
+</head>
+<body>
+
+    <div class="searchbox container-fluid">
+
+        <h2>Weather App</h2>
+        <h3>Search your city name</h3>
+        <form action="/submit"  class="form-inline" style="margin: auto;position: relative;"  method="post">
+            <div class="form-group mb-2">
+              <input type="text" class="form-control" name="getcity" placeholder="City Name">
+            </div>
+
+             
+            <button type="submit" class="btn btn-primary mb-2" style="float: center;">Submit</button>
+          </form>
+          <h5>Created by Sharad Kumar Singh</h5>
+
+    </div>
+    
+</body>
+</html>
